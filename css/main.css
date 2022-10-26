@@ -97,7 +97,7 @@ header a {
 
 .grid {
   display: grid;
-  grid-template-columns: 10fr 2fr;
+  grid-template-columns: 1fr 2fr;
   grid-auto-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -110,4 +110,36 @@ header a {
 .half2 {
   background-color: purple;
   width: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 3fr) 1fr;
+  grid-row: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.half2 div {
+  border: 2px solid red;
+  padding: 2em;
+}
+.box {
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #EFE9E1
+}
+.pink {
+  color: #FC97D8
+}
+.green {
+  color: #18B97D
+}
+.btn {
+  padding: 8px 16px;
+  color: white;
+}
+.btn-pink {
+  background-color: #FC97D8
+}
+.btn-green {
+  background-color: #18B97D
 }
